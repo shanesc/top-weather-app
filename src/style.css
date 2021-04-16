@@ -1,0 +1,36 @@
+:root {
+  --var-name: #ffffff;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* default 10px */
+}
+
+body {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: montserrat;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
