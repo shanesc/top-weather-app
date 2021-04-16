@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 
 :root {
-  --var-name: #ffffff;
+  --light-blue: #9bd4f3bd;
+  --dark-blue: #44748e;
+  --light-grey: #c4c4c4;
 }
 
 *,
@@ -14,6 +16,11 @@
 
 html {
   font-size: 62.5%; /* default 10px */
+  background: url(../assets/backdrop.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
@@ -23,10 +30,13 @@ body {
 body {
   font-family: montserrat, sans-serif;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1;
+  color: var(--dark-blue);
+  padding: 7.5rem 3rem;
 }
 
+/* Button reset */
 button {
   font: inherit;
   color: inherit;
@@ -35,4 +45,146 @@ button {
   margin: 0;
   padding: 0;
   cursor: pointer;
+}
+
+h1 {
+  font-size: 6.4rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7rem;
+}
+
+.svg-search {
+  width: 20px;
+  height: 20px;
+}
+
+.widget {
+  width: 31rem;
+  background: var(--light-blue);
+  padding: 3rem;
+  border: 3px solid var(--dark-blue);
+  border-radius: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.3rem;
+}
+
+.description h2 {
+  margin-bottom: 0.3rem;
+}
+
+.temperature {
+  margin-bottom: 2.5rem;
+}
+
+#current-temp {
+  margin-bottom: 0.7rem;
+}
+
+.high-low-temps {
+  display: flex;
+  justify-content: space-between;
+}
+
+.unit-toggles {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.btn--unit {
+  font-size: 1.3rem;
+  color: var(--light-grey);
+  background: #fff;
+  width: 2.6rem;
+  height: 2.6rem;
+  border: 2px solid var(--light-grey);
+  border-radius: 50%;
+}
+
+.btn--unit.active {
+  color: var(--dark-blue);
+  background: #fff;
+  border: 2px solid var(--dark-blue);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  font-size: 8rem;
+}
+
+@media screen and (orientation: landscape) and (max-width: 850px) {
+  body {
+    height: 100vh;
+    flex-direction: row;
+    padding: 0 3rem;
+    align-items: center;
+  }
+  form {
+    margin-bottom: 12.5rem;
+  }
+}
+
+@media screen and (min-width: 851px) {
+  h1 {
+    font-size: 9.6rem;
+  }
+
+  h2 {
+    font-size: 4.8rem;
+  }
+
+  p {
+    font-size: 1.8rem;
+  }
+
+  .widget {
+    width: 51rem;
+    padding: 6.5rem;
+  }
+
+  .btn--unit {
+    font-size: 1.8rem;
+    width: 3.4rem;
+    height: 3.4rem;
+  }
+
+  .info {
+    gap: 3.9rem;
+  }
+
+  .high-low-temps {
+    justify-content: flex-start;
+    gap: 2.5rem;
+  }
+
+  .icon {
+    font-size: 13rem;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-width: 851px) {
+  body {
+    padding: 13rem 16.5rem;
+    align-items: flex-start;
+  }
 }
