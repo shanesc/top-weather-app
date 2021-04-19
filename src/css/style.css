@@ -108,7 +108,7 @@ body {
 
 .high-low-temps {
   display: flex;
-  justify-content: space-between;
+  gap: 1.5rem;
 }
 
 .unit-toggles {
@@ -184,7 +184,6 @@ form {
   }
 
   .high-low-temps {
-    justify-content: flex-start;
     gap: 2.5rem;
   }
 
