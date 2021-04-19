@@ -29,7 +29,7 @@ body {
 
 body {
   font-family: montserrat, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   font-weight: 600;
   line-height: 1;
   color: var(--dark-blue);
@@ -47,6 +47,16 @@ button {
   cursor: pointer;
 }
 
+/* Input reset */
+input {
+  font: inherit;
+  color: inherit;
+  border: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-size: 6.4rem;
   font-weight: 300;
@@ -54,10 +64,6 @@ h1 {
 
 h2 {
   font-size: 2.4rem;
-}
-
-p {
-  font-size: 1.3rem;
 }
 
 body {
@@ -111,7 +117,6 @@ body {
 }
 
 .btn--unit {
-  font-size: 1.3rem;
   color: var(--light-grey);
   background: #fff;
   width: 2.6rem;
@@ -132,6 +137,13 @@ body {
   font-size: 8rem;
 }
 
+form {
+  display: flex;
+  padding: 0 1rem 0.5rem;
+  border-bottom: 1px solid var(--dark-blue);
+}
+
+/* MEDIA QUERIES */
 @media screen and (orientation: landscape) and (max-width: 850px) {
   body {
     height: 100vh;
@@ -153,7 +165,7 @@ body {
     font-size: 4.8rem;
   }
 
-  p {
+  body {
     font-size: 1.8rem;
   }
 
@@ -163,7 +175,6 @@ body {
   }
 
   .btn--unit {
-    font-size: 1.8rem;
     width: 3.4rem;
     height: 3.4rem;
   }
